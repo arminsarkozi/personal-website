@@ -1,0 +1,509 @@
+/*
+    Copyright (c) 2022 arminsarkozi
+    ---
+    MIT License:
+    https://raw.githubusercontent.com/arminsarkozi/personal-website/main/LICENSE -->
+*/
+
+
+/* ==== GENERAL STYLES ==== */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    font-family: 'NTR', sans-serif;
+    font-size: 1.125rem;
+}
+
+body[class="index"] {
+    /* Image (Pixabay [Free for commercial use; No attribution required]): https://pixabay.com/photos/paper-old-texture-parchment-1074131/ */
+    background: url('assets/christmas-1911637__340.jpg') center center/cover fixed;
+}
+
+body[class="index"], body[class="index-about"] {
+    color: #fff;
+
+    /* Image (Pixabay [Free for commercial use; No attribution required]): https://pixabay.com/photos/road-forest-fall-path-trail-trees-1072821/ */
+    background: url('assets/road-1072821_960_720.jpg') center center/cover fixed;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    padding: 2px;
+    border-radius: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 10px;
+}
+
+:root {
+    --siteFade: hsla(220, 3%, 19%, 0.8);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+}
+
+img {
+    pointer-events: none;
+}
+
+a {
+    color:rgb(111, 128, 204);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(73, 100, 223);
+}
+
+.btn {
+    background-color: #fff;
+    opacity: .8;
+    color: #000;
+    vertical-align: middle;
+    padding: 0.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* ==== HEADER STYLES ==== */
+.index header {
+    height: 94vh;
+    background: url('assets/Jim_bunny.png') top center no-repeat;
+    background-size: 100vh;
+    background-color: hsl(223, 3%, 43%);
+    background-position-y: bottom;
+}
+
+header {
+    width: 100%;
+    opacity: 0.95;
+    color: #fff;
+    text-align: center;
+}
+
+header a {
+    color: rgba(255, 255, 255, .911);
+    text-decoration: none;
+    margin: 2vw;
+}
+
+header a:hover {
+    color: rgb(111, 128, 204);
+    opacity: .9;
+}
+
+header h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 5.5vh;
+    font-size: 3rem;
+    position: absolute;
+    top: 10.4vh;
+}
+
+/* Navbar */
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: hsla(220, 3%, 19%, .9);
+}
+
+nav a {
+    height: 100%;
+    color: rgba(255, 255, 255, .911);
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 1.2%;
+    margin-right: 1.2%;
+    text-align: center;
+    font-size: 118%;
+    vertical-align: middle;
+}
+
+.index-about .home {
+    margin-left: 3.8vw;
+}
+
+@media (min-width: 768px) {
+    
+    nav a {
+        position: relative;
+        font-size: 110%;
+        margin: 1vw;
+        text-align: center;
+    }
+
+    header .home {
+        margin-right: calc(100vw - 38vw);
+        text-align: left;
+    }
+
+}
+
+@media (min-width: 922px) {
+
+      header .home {
+          margin-right: calc(100vw - 30vw);
+      }
+}
+
+/* ==== MAIN STYLES ==== */
+main {
+    text-align: center;
+}
+
+main section {
+    margin: 0 auto;
+    width: 80%;
+}
+
+main section h2 {
+    font-weight: bolder;
+    color: darkcyan;
+    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-color: white;
+}
+
+.intro h2 {
+    font-size: 3.2rem;
+}
+
+main section p {
+    color: rgb(73, 100, 223);
+    font-weight: 700;
+}
+
+.can-box {
+    background-color: #fff;
+    opacity: .86;
+    border-radius: 4px;
+    margin-bottom: .6rem;
+}
+
+.can-box img {
+    background-color: var(--siteFade);
+    margin-top: 1.5vh;
+    width: 50%;
+    border-radius: 80px 25px;
+}
+
+.can-box p {
+    margin: auto 1rem 1rem 1rem;
+}
+
+.can-box h3 {
+    font-size: 1.2rem;
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+@media (min-width: 768px) {
+
+      main {
+        min-height: calc(100vh - 30px);
+      }
+
+      main section {
+          width: 32.5%;
+      }
+}
+
+/* Blog homepage */
+.blog header {
+    margin-bottom: 1rem;
+}
+
+.blog .home {
+    margin-left: 3vw;
+}
+
+.posts {
+    width: 98%;
+}
+
+.post {
+    display: inline-block;
+    width: 90%;
+    background-color: #fff;
+    opacity: .9;
+    border: 1px solid #000;
+    margin: 0.5rem;
+}
+
+.post figure {
+    margin: 0 auto 1rem;
+    width: 60%;
+}
+
+figure img {
+    width: 100%;
+}
+
+.post p {
+    margin: 0.5rem 1rem;
+}
+
+.post link {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+
+      .post {
+          width: 20%;
+      }
+
+}
+
+/* Article */
+
+.article-header {
+    display: table-cell;
+}
+
+.title-wrapper {
+    display: table-cell;
+    width: 100vw;
+    height: 100vh;
+    vertical-align: middle;
+}
+
+.title-wrapper .wrapper {
+    display: block;
+    width: 100%;
+    min-height: 16vhvh;
+    background-color: hsl(218, 7%, 10%, 60%);
+    margin: 0 auto;
+}
+
+.title {
+    color: rgb(140, 207, 207);
+    font-family: Sarabun;
+    font-size: xx-large;
+    font-weight: 1000;
+    line-height: 1.5;
+    margin-bottom: 1vh;
+}
+
+.author {
+    display: inline-block;
+    background-color: rgba(183, 187, 196, 0.788);
+    border-radius: 2px;
+    padding: 3px;
+    margin: .4rem .08rem auto .08rem;
+}
+
+.date {
+    margin-bottom: 1rem;
+}
+
+article {
+    width: 100%;
+    margin: .3rem 0.1rem .3rem auto;
+    line-height: 1.2;
+    letter-spacing: .01rem;
+}
+
+article h2[class="article-title"] {
+    width: 80vw;
+    color: rgb(128, 182, 164);
+    font-size: 190%;
+    text-align: left;
+    margin-left: 1rem;
+    border-bottom: 2px solid rgb(128, 182, 164);
+}
+
+article small {
+    color: #888;
+    font-size: 45%;
+}
+
+article p {
+    margin: .7rem 1rem;
+    text-align: left;
+}
+
+article img {
+    display: block;
+    max-height: 45vw;
+    margin-left: 1rem;
+    border-radius: 2px;
+}
+
+.writer-image {
+    width: 20%;
+    float: right;
+    margin: auto 2rem 5rem 1.2rem;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: none;
+}
+
+.writer-image img {
+    width: 35%;
+    border-radius: 50%;
+}
+
+.back-link {
+    display: block;
+    text-align: left;
+    height: 100%;
+    margin: 1.3rem;
+    padding: 0.2rem;
+    border-radius: 10px;
+}
+
+.back-icon {
+    font-size: 80%;
+}
+
+@media (min-width: 756px) {
+
+      article img {
+          max-height: 20vw;
+      }
+
+      .title-wrapper .wrapper {
+          width: 75%;
+          min-height: 10vw;
+      }
+
+      article h2[class="article-title"] {
+          width: 60vw;
+      }
+
+}
+
+/* About main */
+.about {
+    min-height: calc(47vh - 35px);
+    text-align: center;
+    padding-left: 1rem;
+    font-size: 105%;
+    margin-bottom: 5vh;
+}
+
+.about h1 {
+    margin-top: 38vh;
+}
+
+.about a {
+    font-weight: 600;
+}
+
+@media (min-width: 789px) {
+
+      .writer-image {
+          display: block;
+      }
+
+      .about a {
+          color: rgb(238, 235, 235);
+      }
+
+      .about a:hover {
+          opacity: .9;
+      }
+
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    height: 40px;
+    margin-top: .25rem;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    vertical-align: middle;
+    min-height: 30px;
+    padding: 0.4rem;
+    background-color: grey;
+    text-align: center;
+}
+
+footer a {
+    height: 100%;
+    width: 100%;
+    color:rgb(207, 220, 245);
+}
+
+footer a:hover {
+    color: rgb(180, 189, 230);
+}
+
+@media (min-width: 768px) {
+
+      footer {
+          position: relative;
+          bottom: 0;
+          width: 100%;
+      }
+
+}
+
+/* PRINT */
+@media print {
+
+      header {
+          display: none;
+      }
+
+      footer {
+          position: inherit;
+          margin-top: 2vw;
+      }
+
+}
