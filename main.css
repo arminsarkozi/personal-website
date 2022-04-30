@@ -26,17 +26,20 @@ body {
 }
 
 body[class="index"] {
-    /* Image (Pixabay [Free for commercial use; No attribution required]): https://pixabay.com/photos/paper-old-texture-parchment-1074131/ */
+    /* Image (Pixabay [Free for commercial use; No attribution required]): https://pixabay.com/photos/christmas-background-flat-lay-1911637/ */
     background: url('assets/christmas-1911637__340.jpg') center center/cover fixed;
 }
 
-body[class="index"], body[class="index-about"] {
-    color: #fff;
-
-    /* Image (Pixabay [Free for commercial use; No attribution required]): https://pixabay.com/photos/road-forest-fall-path-trail-trees-1072821/ */
-    background: url('assets/road-1072821_960_720.jpg') center center/cover fixed;
+@media (min-width: 768px) {
+    
+    body[class="index"], body[class="index-about"] {
+        color: #fff;
+    
+        /* Image (Pixabay [Free for commercial use; No attribution required]): https://pixabay.com/photos/road-forest-fall-path-trail-trees-1072821/ */
+        background: url('assets/road-1072821_960_720.jpg') center center/cover fixed;
+    }
+    
 }
-
 ::-webkit-scrollbar {
     width: 8px;
     padding: 2px;
