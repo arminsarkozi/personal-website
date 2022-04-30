@@ -507,3 +507,12 @@ footer a:hover {
       }
 
 }
+
+/* 404 error page */
+.page-404 h4 {
+    margin: 40vw auto 2vw;
+}
+
+.page-404 .footer {
+    margin-top: 39vw;
+}
