@@ -30,9 +30,16 @@ body[class="index"] {
     background: url('assets/christmas-1911637__340.jpg') center center/cover fixed;
 }
 
+body[class="index-about"] {
+    color: #fff;
+
+    /* Image (Pixabay [Free for commercial use; No attribution required]): https://pixabay.com/photos/road-forest-fall-path-trail-trees-1072821/ */
+    background: url('assets/road-1072821_960_720.jpg') center center/cover fixed;
+}
+
 @media (min-width: 768px) {
-    
-    body[class="index"], body[class="index-about"] {
+
+    body[class="index"] {
         color: #fff;
     
         /* Image (Pixabay [Free for commercial use; No attribution required]): https://pixabay.com/photos/road-forest-fall-path-trail-trees-1072821/ */
@@ -187,17 +194,10 @@ nav a {
     }
 
     header .home {
-        margin-right: calc(100vw - 38vw);
+        margin-right: calc(100vw - 47vw);
         text-align: left;
     }
 
-}
-
-@media (min-width: 922px) {
-
-      header .home {
-          margin-right: calc(100vw - 30vw);
-      }
 }
 
 /* ==== MAIN STYLES ==== */
@@ -251,7 +251,7 @@ main section p {
 
 @media (min-width: 768px) {
 
-      main {
+      main[class="index"] {
         min-height: calc(100vh - 30px);
       }
 
@@ -311,6 +311,12 @@ figure img {
 
 .article-header {
     display: table-cell;
+    width: 100%;
+    height: 100%;
+    background: url('assets/office-2717014_960_720.jpg') 70% center/cover no-repeat;
+    background-position-y: 10%;
+    background-color: hsl(220, 3%, 19%);
+    opacity: 0.95;
 }
 
 .title-wrapper {
@@ -343,10 +349,6 @@ figure img {
     border-radius: 2px;
     padding: 3px;
     margin: .4rem .08rem auto .08rem;
-}
-
-.date {
-    margin-bottom: 1rem;
 }
 
 article {
@@ -465,7 +467,6 @@ article img {
 .footer {
     width: 100%;
     height: 40px;
-    margin-top: calc(57.9vh - 35px);
 }
 
 footer {
