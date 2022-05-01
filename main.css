@@ -218,7 +218,10 @@ main[class="index"] section h2 {
 }
 
 .intro h2 {
+    color: darkcyan;
     font-size: 3.2rem;
+    -webkit-text-stroke-width: 0.35px;
+    -webkit-text-stroke-color: #fff;
 }
 
 main section p {
@@ -241,12 +244,14 @@ main section p {
 }
 
 .can-box p {
+    font-size: 1.17rem;
     margin: auto 1rem 1rem 1rem;
 }
 
 .can-box h3 {
-    font-size: 1.2rem;
+    font-size: 1.38rem;
     padding: 1rem 1rem 0rem 1rem;
+    font-weight: 700;
 }
 
 @media (min-width: 768px) {
