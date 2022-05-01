@@ -417,22 +417,26 @@ article img {
     font-size: 80%;
 }
 
+.references {
+    width: 80vw;
+    margin: 0 auto;
+}
+
 .references h2 {
-    width: 100%;
     color: green;
-    margin-top: 2.5rem;
+    margin-top: 2.4rem;
     padding-top: .6rem;
     border-top: 2px solid slateblue;
 }
 
 table {
-    width: 98%;
-    margin: 20px auto;
+    width: 40%;
+    font-size: 4vw;
+    margin: 10px auto;
     border-collapse: collapse;
 }
   
 tr, th, td, caption {
-    font-size: 18px;
     border: 1px solid grey;
     text-align: center;
     padding: 5px;
@@ -449,7 +453,15 @@ caption {
     font-weight: bold;
 }
 
-@media (min-width: 756px) {
+@media (min-width: 500px) {
+
+    table {
+        font-size: 1rem;
+    }
+
+}
+
+@media (min-width: 768px) {
 
       article img {
           max-height: 20vw;
