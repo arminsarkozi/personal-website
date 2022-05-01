@@ -1,0 +1,2 @@
+# Posts
+There are blog posts for blog. Visitors to your web site can read these. You can create a new entry by duplicating and renaming the "Example Post" folder. It's a good idea to duplicate the entire folder to avoid displaying index.html in the URL. After writing a new article, we can put it in the ../index.html (blog home) file as an `<div>` HTML element, this will be the entry.
