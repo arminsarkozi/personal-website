@@ -210,7 +210,7 @@ main section {
     width: 80%;
 }
 
-main section h2 {
+main[class="index"] section h2 {
     font-weight: bolder;
     color: darkcyan;
     -webkit-text-stroke-width: 0.01px;
@@ -410,6 +410,38 @@ article img {
 
 .back-icon {
     font-size: 80%;
+}
+
+.references h2 {
+    width: 100%;
+    color: green;
+    margin-top: 2.5rem;
+    padding-top: .6rem;
+    border-top: 2px solid slateblue;
+}
+
+table {
+    width: 98%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+  
+tr, th, td, caption {
+    font-size: 18px;
+    border: 1px solid grey;
+    text-align: center;
+    padding: 5px;
+}
+  
+th {
+    color: #fff;
+    background-color: #666;
+    opacity: .8;
+}
+  
+caption {
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 @media (min-width: 756px) {
