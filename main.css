@@ -250,8 +250,9 @@ main section p {
 
 .can-box h3 {
     font-size: 1.38rem;
-    padding: 1rem 1rem 0rem 1rem;
     font-weight: 700;
+    color: rgb(63, 61, 61);
+    padding: 1rem 1rem 0rem 1rem;
 }
 
 @media (min-width: 768px) {
